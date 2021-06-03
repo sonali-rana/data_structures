@@ -49,7 +49,7 @@ int main()
     cin >> length;
     int arr[length];
     for (int i=0;i<=length-1;i++){
-    	cout << "enter "<<i << "element in array "<< endl;
+    	cout << "enter "<<i << " element in array "<< endl;
     	cin >> arr[i] ;
     };
     InsertionSort sort = InsertionSort(arr,length);
