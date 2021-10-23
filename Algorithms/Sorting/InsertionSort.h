@@ -1,7 +1,5 @@
 #include <iostream>
 using namespace std;
-#include "BubbleSort.h"
-
 class InsertionSort
 {
 public:
@@ -45,9 +43,15 @@ public:
 
 int main()
 {
-	int length=6;
-    int arr[6]={4,3,2,1,10,15};
-    BubbleSort sort = BubbleSort(arr,length);
+	int length;
+    cout << "Enter the length of array "<<endl;
+    cin >> length;
+    int arr[length];
+    for (int i=0;i<=length-1;i++){
+    	cout << "enter "<<i << " element in array "<< endl;
+    	cin >> arr[i] ;
+    };
+    InsertionSort sort = InsertionSort(arr,length);
     sort.sort();
     return 0;
 };
